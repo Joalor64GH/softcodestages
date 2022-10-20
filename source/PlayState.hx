@@ -332,7 +332,7 @@ class PlayState extends MusicBeatState
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 
-		boyfriend = new Character(770, 450, SONG.player1, true);
+		boyfriend = new Boyfriend(770, 450, SONG.player1, true);
 
 		switch (curStage) //ONE DAY, THIS SHALL BE GONE
 		{
@@ -2158,7 +2158,7 @@ class PlayState extends MusicBeatState
 					trainCooldown = FlxG.random.int(-4, 0);
 					trainStart();
 				}
-		}
+	}
+
 	var curLight:Int = 0;
-        }
 }
