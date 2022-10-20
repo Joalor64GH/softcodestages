@@ -2160,4 +2160,5 @@ class PlayState extends MusicBeatState
 				}
 		}
 	var curLight:Int = 0;
+        }
 }
