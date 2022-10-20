@@ -2160,6 +2160,7 @@ class PlayState extends MusicBeatState
 				}
 	}
 
-	var curLight:Int = 0;		
-    }
+	var curLight:Int = 0;
+	}
+}
 }
