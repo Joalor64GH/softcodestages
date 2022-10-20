@@ -325,14 +325,14 @@ class PlayState extends MusicBeatState
 				gfVersion = 'gf-pixel';
 		}
 
-		gf = createCharacter(400, 130, gfVersion);
+		gf = new Character(400, 130, gfVersion);
 		gf.scrollFactor.set(0.95, 0.95);
 
-		dad = createCharacter(100, 100, SONG.player2);
+		dad = new Character(100, 100, SONG.player2);
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 
-		boyfriend = createCharacter(770, 450, SONG.player1, true);
+		boyfriend = new Character(770, 450, SONG.player1, true);
 
 		switch (curStage) //ONE DAY, THIS SHALL BE GONE
 		{
@@ -2159,12 +2159,5 @@ class PlayState extends MusicBeatState
 					trainStart();
 				}
 		}
-
-		if (isHalloween && FlxG.random.bool(10) && curBeat > lightningStrikeBeat + lightningOffset)
-		{
-			lightningStrikeShit();
-		}
-	}
-
 	var curLight:Int = 0;
 }
